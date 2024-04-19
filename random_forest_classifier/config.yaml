@@ -1,0 +1,23 @@
+model:
+  model_name: Random Forest Classifier
+  model_description: >
+    См. https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
+  
+  problem: regression
+
+  train_metrics:
+    - 'accuracy'
+    - 'precision'
+    - 'recall'
+
+  train_hyperparameters:
+    - name: n_estimators
+      description: The number of trees in the forest.
+      type: int
+      default_value: 100
+    - name: max_depth
+      description: The maximum depth of the tree. If None, then nodes are expanded until all leaves are pure or until all leaves contain less than min_samples_split samples
+      type: int
+      default_value: null
+
+

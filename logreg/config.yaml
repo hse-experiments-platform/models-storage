@@ -1,0 +1,26 @@
+model:
+  model_name: Logistic regression
+  model_description: >
+    См. https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html
+  
+  problem: classification
+
+  train_metrics:
+    - 'accuracy'
+    - 'precision'
+    - 'recall'
+
+  train_hyperparameters:
+    - name: penalty
+      description: Oneof None/l1/l2/elasticnet.
+      type: string
+      default_value: l2
+    - name: max_iter
+      description: Maximum number of iterations taken for the solvers to converge.
+      type: int
+      default_value: 100
+    - name: fit_intercept
+      description: Specifies if a constant (a.k.a. bias or intercept) should be added to the decision function.
+      type: bool
+      default_value: True
+
