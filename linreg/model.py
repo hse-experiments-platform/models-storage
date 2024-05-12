@@ -3,10 +3,10 @@ import typing
 from ..lib.scorer import ScorerMixin
 
 
-class LogRegression(ScorerMixin, sk.LogisticRegression):
+class LinearRegression(ScorerMixin, sk.LinearRegression):
     def __init__(self, hyperparams: typing.Dict[str, typing.Any], metrics: typing.List[str]):
         super().__init__(**hyperparams)
-        self._model = sk.LogisticRegression(**hyperparams)
+        self._model = sk.LinearRegression(**hyperparams)
         self.hyperparams = hyperparams
 
         # TODO: better metrics logic
