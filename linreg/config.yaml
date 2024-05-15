@@ -1,5 +1,6 @@
 model:
   model_name: Linear regression
+  class_name: LinearRegression
   model_description: >
     См. https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html
   

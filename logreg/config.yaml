@@ -1,5 +1,6 @@
 model:
   model_name: Logistic regression
+  class_name: LogRegression
   model_description: >
     См. https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html
   
@@ -7,8 +8,9 @@ model:
 
   train_metrics:
     - 'accuracy'
-    - 'precision'
-    - 'recall'
+    - 'f1_macro'
+    - 'precision_macro'
+    - 'recall_macro'
 
   train_hyperparameters:
     - name: penalty
