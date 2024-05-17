@@ -3,7 +3,7 @@ model:
   model_description: >
     См. https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
   
-  problem: regression
+  problem: Regression
 
   train_metrics:
     - 'accuracy'

@@ -4,7 +4,7 @@ model:
   model_description: >
     См. https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html
   
-  problem: regression
+  problem: Regression
 
   train_metrics:
     - 'r2'

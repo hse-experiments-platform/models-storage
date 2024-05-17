@@ -4,7 +4,7 @@ model:
   model_description: >
     См. https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html
   
-  problem: classification
+  problem: Classification
 
   train_metrics:
     - 'accuracy'
